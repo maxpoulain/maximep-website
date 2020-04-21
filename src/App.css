@@ -1,0 +1,624 @@
+ /*
+ This css file contain all style of the application. 
+ 1. App
+ 2. Header
+ 3. Home Section
+ 4. About
+ 5. Education & Exprience
+ 6. Blog Cards
+ 7. Blog Article
+ 8. Footer
+ */
+
+
+ /* App */
+ .App {
+  text-align: center;
+}
+/* End of App */
+
+/* Header */
+.custom-header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.custom-header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-left: 45%;
+}
+@media screen and (max-width: 1024px){
+  .custom-header ul{
+    margin-left: 0%;
+  }
+}
+
+.custom-header li {
+  float: left;
+}
+
+.custom-header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-family: Lato;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px){
+  .custom-header li a{
+    font-size: 15px;
+    padding-top: 16px;
+    padding-right: 3px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+  }
+}
+
+.custom-header li a:hover {
+  color: #C49B66;
+}
+/* End of Header */
+
+/* Home Section */
+.home {
+  height: 100vh;
+  background-image: url("images/i13.png");
+  display: flex;
+  flex-direction: column;
+  background-size: cover; 
+ }
+ 
+ .arrow {
+   position: absolute;
+   bottom: 10%;
+   width: 100%;
+   text-align: center;
+   color: #fff;
+   font-size: 13px;
+   z-index: 8;
+ }
+ .arrow i {
+   position: relative;
+   display: inline-block;
+   width: 30px;
+   height: 30px;
+   line-height: 30px;
+ }
+ .arrow i:after {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgb(255, 255, 255, 0.3);
+   border-radius: 50%;
+   z-index: -1;
+   -webkit-transition: all .2s;
+   transition: all .2s;
+ }
+ .arrow i:hover:after {
+   -webkit-transform: scale(1.2);
+           transform: scale(1.2);
+   opacity: 0;
+   -webkit-transition: all .5s;
+   transition: all .5s;
+ }
+ 
+ .intro {
+   position: absolute;
+   width: 100%;
+   top: 40%;
+   left: 0;
+   text-align: center;
+   -webkit-transform: translate(0%, -40%);
+      -moz-transform: translate(0%, -40%);
+     -ms-transform: translate(0%, -40%);
+      -o-transform: translate(0%, -40%);
+       transform: translate(0%, -40%);
+   padding: 0 15px;
+ }
+
+ #cursor {
+  border-left: .1em solid #FFF;
+  animation: blink .7s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.titlename{
+  font-family: Lato;
+  font-weight: 900;
+  font-size: 60px;
+  color: white;
+
+}
+
+.home h1{ 
+font-family: Lato;
+  font-weight: 700;
+  font-size: 40px;
+  color: white;
+}
+/* End Home Section */
+
+/* About */
+.title {
+  font-family: lato;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 35px;
+  color: white;
+}
+
+.social-icon {
+  margin-top:30px;
+}
+
+.social-icon span {
+    width: 10%;
+    height: auto;
+    cursor: pointer;
+    -webkit-transition: all .5s;
+    transition: all .5s; 
+    font-size: 30px;
+    margin-right: 15px;
+  }
+  
+  .icon:hover {
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 15px;
+  }
+  
+  .icon {
+    font-size: 30px;
+    color: #C49B66;
+    margin-bottom: 15px;
+  }
+
+  .btn.custom_button {
+    margin-left:50px;
+    color:#C49B66;
+    border-color: #C49B66;
+    font-family: Lato;
+    font-weight: 700;
+  }
+
+  .btn.custom_button:hover{
+    background-color: #000;
+    border-color: #000;
+    
+  }
+
+  .custom_button i{
+    color: #C49B66;
+  }
+
+.about {
+  padding-bottom: 170px;
+}
+
+.about h2{
+  font-family: lato;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 35px;
+  color: #000;
+}
+
+.about h3{
+  font-family: lato;
+  font-weight: 700;
+  font-size: 28px;
+  padding-bottom: 15px;
+}
+
+.about p{
+  font-family: lato;
+  font-weight: 300;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.about-img {
+    padding: 0 60px 0 0;
+    position: relative;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+  }
+ .about-img:hover {
+    padding: 0 0 0 20px;
+  }
+.about-img:hover:after {
+    background: #C49B66;
+    left: 5px;
+    top: -15px;
+    right: 15px;
+    bottom: 15px;
+  }
+.about-img:after {
+    content: '';
+    background: #f5f5f5;
+    position: absolute;
+    left: 15px;
+    right: 5px;
+    top: 15px;
+    bottom: -15px;
+    z-index: -1;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .about-img {
+      padding: 0 30px 0 30px;
+      position: relative;
+    }
+   .about-img:hover {
+      padding: 0 30px 0 30px;
+    }
+  .about-img:hover:after {
+      background: #FFF;
+    }
+  .about-img:after {
+      background: #fff;
+    }
+  }
+/* End of About */
+
+/* Education & Experience */
+.title {
+  font-family: lato;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 35px;
+  color: #FFF;
+}
+
+.parallax {
+/* The image used */
+background-image: url("images/i3.jpg");
+
+/* Full height */
+height: 100%;
+
+padding-bottom:100px;
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+@media only screen and (max-device-width: 1024px) {
+.parallax {
+    background-attachment: scroll;
+}
+}
+
+
+.cv_edu_exp {
+  padding: 10px 0;
+  position: relative;
+}
+
+.cv_edu_exp::after {
+  content: "";
+  height: 100%;
+  left: 0;
+  background-color: #e7e7e7;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+}
+
+.cv_edu_exp .cv_edu_exp_box {
+  border-radius: 7px;
+  border: 1px solid #e7e7e7;
+  margin-left: 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.cv_edu_exp .cv_edu_exp_box .cv_edu_exp_year {
+  position: relative;
+  margin: 0 0 10px 15px !important;
+}
+
+.cv_edu_exp .cv_edu_exp_box .cv_edu_exp_year::after {
+  border: 3px solid #fff;
+  border-radius: 50%;
+  content: "";
+  height: 20px;
+  background-color: #000;
+  position: absolute;
+  left: -51px !important;
+  width: 20px;
+  z-index: 1;
+}
+
+.cv_edu_exp .cv_edu_exp_box .cb_edu_exp_detail {
+  text-align: left;
+  margin-left: 15px;
+  float: left;
+  border-radius: 0;
+  color: #FFF;
+}
+
+.cv_edu_exp h4,
+.cb_edu_exp_detail h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 0;
+  text-transform: capitalize;
+}
+
+.cv_desc {
+  line-height: 26px;
+  font-size: 15px;
+  color: #666;
+}
+
+.tag-year {
+  font-family: Lato;
+  font-weight: 700;
+  font-size: 14px;
+  position: absolute;
+  padding: 8px 22px;
+  background: #C49B66;
+  color: #fff;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+}
+/* End of Education & Experience */
+
+/*Blog Cards*/
+.tag {
+  position: absolute;
+  top: -15px;
+  right: 15px;
+  padding: 8px 22px;
+  font-size: 11px;
+  background: #C49B66;
+  color: #000;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+}
+
+.myblog h2{
+  font-family: lato;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 35px;
+  color: #000;
+}
+
+.custom-card {
+height: 275px;
+border-color: rgba(0, 0, 0, 0.25);
+
+}
+
+@media screen and (max-width: 768px){
+  .custom-card{
+    height: 325px;
+  }
+}
+
+.custom-headcard {
+padding-top: 1.2rem ;
+margin-bottom: 0;
+border-bottom: 1px solid #C49B66;
+}
+
+.custom-footcard {
+padding: 0.75rem 1.25rem;
+}
+
+.custom-footcard a{
+font-family: Lato;
+font-weight: 700;
+color: #C49B66;
+}
+
+.custom-card h5{
+font-family: Lato;
+font-weight: 700;
+color: #000;
+margin-bottom: 0px;
+}
+
+.custom-card h6{
+font-size: 10px;
+font-family: Lato;
+font-weight: 300;
+color: #000;
+}
+
+.pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+.pagination > li {
+    display: inline;
+}
+.pagination > li > a,
+.pagination > li > span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #C49B66;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+    z-index: 2;
+    color: #23527c;
+    background-color: #eeeeee;
+    border-color: #ddd;
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+    margin-left: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #C49B66;
+    border-color: #C49B66;
+}
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
+    color: #777777;
+    cursor: not-allowed;
+    background-color: #fff;
+    border-color: #ddd;
+}
+.pagination-lg > li > a,
+.pagination-lg > li > span {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+}
+.pagination-lg > li:first-child > a,
+.pagination-lg > li:first-child > span {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.pagination-lg > li:last-child > a,
+.pagination-lg > li:last-child > span {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.pagination-sm > li > a,
+.pagination-sm > li > span {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.pagination-sm > li:first-child > a,
+.pagination-sm > li:first-child > span {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.pagination-sm > li:last-child > a,
+.pagination-sm > li:last-child > span {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+/*End of Blog Cards*/
+
+/* Article Blog */
+.blog {
+  height: 100%;
+  background-color: rgb(241, 239, 235);
+  display: flex;
+  flex-direction: column;
+  background-size: cover; 
+ }
+
+.blog-title{
+  font-family: Lato;
+  font-weight: 700;
+  color: black;
+  font-size: 40px;
+}
+
+.blog-date{
+  font-family: Lato;
+  font-weight: 300;
+  color: black;
+  font-size: 14px;
+}
+
+.blog-categorie{
+  font-family: Lato;
+  font-weight: 400;
+  color: black;
+  font-size: 15px;
+  background-color:#C49B66;
+  padding: 1px 5px 1px 5px;
+  text-transform: uppercase;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.blog-presentation h2{
+  font-family: Lato;
+  font-weight: 700;
+  color: black;
+  font-size: 25px;
+}
+
+.blog-presentation p{
+  font-family: Lato;
+  font-weight: 400;
+  color: black;
+  font-size: 20px;
+}
+
+.blog-technos {
+  list-style-type:none;
+  column-count: 2;
+  padding-inline-start: 0px;
+}
+
+.blog-technos li{
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 15px;
+}
+/* End of Article Blog */
+
+/* Footer */
+.footer {
+  padding: 50px 0;
+  background: #111;
+  text-align: center;
+}
+.footer p {
+  font-size: 13px;
+  color: white;
+}
+/* End of Footer */
