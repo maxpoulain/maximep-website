@@ -1,5 +1,6 @@
 import React from 'react';
 
+//TODO: Remove hardcoded number of pages
 class PaginationComponent extends React.Component {
     constructor(props) {
         super(props);
@@ -39,13 +40,13 @@ class PaginationComponent extends React.Component {
         var totalPages = Math.ceil(totalItems / pageSize);
 
         var startPage, endPage;
-        if (totalPages <= 2) {
+        if (totalPages <= 3) {
             startPage = 1;
             endPage = totalPages;
         } else {
             if (currentPage <= 4) {
                 startPage = 1;
-                endPage = 2;
+                endPage = 3;
             } else if (currentPage + 4 >= totalPages) {
                 startPage = totalPages - 9;
                 endPage = totalPages;

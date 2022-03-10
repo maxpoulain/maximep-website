@@ -21,10 +21,11 @@ function App() {
           <HeaderComponent />
           <Switch>
             <Route exact path='/' component={HomeComponent}></Route>
+            <Route exact path="/panenka" component={() => <ArticleBlogComponent articlename="panenka" />}></Route>
             <Route exact path="/boursonomic" component={() => <ArticleBlogComponent articlename="boursonomic" />}></Route>
             <Route exact path="/data4good" component={() => <ArticleBlogComponent articlename="data4good" />}></Route>
             <Route exact path="/betit" component={() => <ArticleBlogComponent articlename="betit" />}></Route>
-            <Route exact path="/worldcup-dashbord" component={() => <ArticleBlogComponent articlename="worldcup-dashbord" />}></Route>
+            <Route exact path="/worldcup-dashboard" component={() => <ArticleBlogComponent articlename="worldcup-dashboard" />}></Route>
             <Route exact path="/fil-rouge" component={() => <ArticleBlogComponent articlename="fil-rouge" />}></Route>
             <Route exact path="/nosql" component={() => <ArticleBlogComponent articlename="nosql" />}></Route>
             <Route exact path="/wind-turbine" component={() => <ArticleBlogComponent articlename="wind-turbine" />}></Route>

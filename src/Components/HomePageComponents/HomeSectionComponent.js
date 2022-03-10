@@ -8,7 +8,7 @@ function HomeSectionComponent() {
                 <h2 className="titlename">Maxime Poulain</h2>
             </div>
             <div className="row titlejob">
-                <TyperComponent heading="" dataText={['Data Scientist', 'ML Engineer', 'Developpeur', 'Geek', 'Podcaster', 'Sportif', 'Voyageur']} />
+                <TyperComponent heading="" dataText={['Data Engineer', 'ML Engineer', 'Data Scientist', 'Developpeur', 'Geek', 'Podcaster', 'Sportif', 'Photographe', 'Voyageur']} />
             </div>
         </div>
     )

@@ -54,7 +54,7 @@ function EducationExperienceComponent() {
                                     <div className="cv_edu_exp_year tag-year">2018 - Aujourd'hui</div>
                                     <div className="col-lg-12">
                                         <div className="cb_edu_exp_detail">
-                                            <h4>Data Scientist | ML Engineer</h4>
+                                            <h4>Data Engineer | ML Engineer | Data Scientist</h4>
                                             <h5>Adot - Paris, France</h5>
                                         </div>
                                     </div>

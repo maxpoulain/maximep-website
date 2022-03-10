@@ -18,7 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy":"react-scripts build && node ftp.js"
+    "deploy": "react-scripts build && node ftp.js"
   },
   "eslintConfig": {
     "extends": "react-app"
