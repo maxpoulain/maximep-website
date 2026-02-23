@@ -14,12 +14,11 @@ jobs:
       with:
         node-version: '22.x'
 
-    - name: FTP Deploy
+    - name: Build & FTP Deploy
       run: |
-        npm install
+        npm ci
         npm run deploy
       env:
-        CI: false
         FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         FTP_HOST: ${{ secrets.FTP_HOST }}
