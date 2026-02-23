@@ -8,8 +8,8 @@ import ArticleBlogComponent from './Components/BlogPagesComponents/ArticleBlogCo
 
 import {
   BrowserRouter as Router,
-  Route,
-  Switch
+  Routes,
+  Route
 } from 'react-router-dom';
 
 
@@ -19,18 +19,18 @@ function App() {
       <Router>
         <div>
           <HeaderComponent />
-          <Switch>
-            <Route exact path='/' component={HomeComponent}></Route>
-            <Route exact path="/panenka" component={() => <ArticleBlogComponent articlename="panenka" />}></Route>
-            <Route exact path="/boursonomic" component={() => <ArticleBlogComponent articlename="boursonomic" />}></Route>
-            <Route exact path="/data4good" component={() => <ArticleBlogComponent articlename="data4good" />}></Route>
-            <Route exact path="/betit" component={() => <ArticleBlogComponent articlename="betit" />}></Route>
-            <Route exact path="/worldcup-dashboard" component={() => <ArticleBlogComponent articlename="worldcup-dashboard" />}></Route>
-            <Route exact path="/fil-rouge" component={() => <ArticleBlogComponent articlename="fil-rouge" />}></Route>
-            <Route exact path="/nosql" component={() => <ArticleBlogComponent articlename="nosql" />}></Route>
-            <Route exact path="/wind-turbine" component={() => <ArticleBlogComponent articlename="wind-turbine" />}></Route>
-            <Route component={NotFoundComponent}></Route>
-          </Switch>
+          <Routes>
+            <Route path='/' element={<HomeComponent />} />
+            <Route path="/panenka" element={<ArticleBlogComponent articlename="panenka" />} />
+            <Route path="/boursonomic" element={<ArticleBlogComponent articlename="boursonomic" />} />
+            <Route path="/data4good" element={<ArticleBlogComponent articlename="data4good" />} />
+            <Route path="/betit" element={<ArticleBlogComponent articlename="betit" />} />
+            <Route path="/worldcup-dashboard" element={<ArticleBlogComponent articlename="worldcup-dashboard" />} />
+            <Route path="/fil-rouge" element={<ArticleBlogComponent articlename="fil-rouge" />} />
+            <Route path="/nosql" element={<ArticleBlogComponent articlename="nosql" />} />
+            <Route path="/wind-turbine" element={<ArticleBlogComponent articlename="wind-turbine" />} />
+            <Route path="*" element={<NotFoundComponent />} />
+          </Routes>
         </div>
         <FooterComponent />
       </Router>
