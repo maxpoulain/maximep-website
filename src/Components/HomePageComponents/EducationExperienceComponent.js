@@ -49,12 +49,23 @@ function EducationExperienceComponent() {
                     </div>
                     <div className="col-md-5 offset-md-2">
                         <div className="cv_edu_exp mt-3">
-                            <div className="cv_edu_exp_box mt-4">
+                        <div className="cv_edu_exp_box mt-4">
                                 <div className="row">
-                                    <div className="cv_edu_exp_year tag-year">2018 - Aujourd'hui</div>
+                                    <div className="cv_edu_exp_year tag-year">2025 - Aujourd'hui</div>
                                     <div className="col-lg-12">
                                         <div className="cb_edu_exp_detail">
-                                            <h4>Data Engineer | ML Engineer | Data Scientist</h4>
+                                            <h4>Head of Data</h4>
+                                            <h5>Indy - Paris/Lyon, France</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="cv_edu_exp_box mt-4">
+                                <div className="row">
+                                    <div className="cv_edu_exp_year tag-year">2018 - 2025</div>
+                                    <div className="col-lg-12">
+                                        <div className="cb_edu_exp_detail">
+                                            <h4>Head of Data | Data Engineer | Data Scientist</h4>
                                             <h5>Adot - Paris, France</h5>
                                         </div>
                                     </div>
@@ -65,13 +76,13 @@ function EducationExperienceComponent() {
                                     <div className="cv_edu_exp_year tag-year">2018 - 2019</div>
                                     <div className="col-lg-12">
                                         <div className="cb_edu_exp_detail">
-                                            <h4>Cofondateur \& Directeur Général</h4>
+                                            <h4>Cofondateur & Directeur Général</h4>
                                             <h5>DataDeer - Paris, France</h5>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className="cv_edu_exp_box mt-4">
+                            {/* <div className="cv_edu_exp_box mt-4">
                                 <div className="row">
                                     <div className="cv_edu_exp_year tag-year">2017</div>
                                     <div className="col-lg-12">
@@ -81,7 +92,7 @@ function EducationExperienceComponent() {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
