@@ -1,25 +1,7 @@
 import React from 'react';
-import Slide from 'react-slideshow-image';
 import panenkaImg from '../../images/panenka.png';
 import boursonomicImg from '../../images/boursonomic.png';
 import architectureImg from '../../images/architecture.png';
-
-const slideImages = [
-    { "source": "worldcup.png", "size": "100%" },
-    { "source": "worldcup1.png", "size": "100%", "style": { "paddingTop": "8%" } },
-    { "source": "worldcup2.png", "size": "100%", "style": { "paddingTop": "18%" } },
-    { "source": "worldcup3.png", "size": "40%" },
-];
-
-const properties = {
-    duration: 2500,
-    transitionDuration: 500,
-    infinite: true,
-    indicators: true,
-    arrows: true,
-    pauseOnHover: true,
-    autoplay: true,
-}
 
 //TODO: group this with data in BlogCardsComponent
 const articles = {
