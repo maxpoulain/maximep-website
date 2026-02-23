@@ -3,30 +3,29 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^6.4.0",
-    "@testing-library/react": "^16.0.0",
-    "@testing-library/user-event": "^14.5.0",
     "ftp-deploy": "^2.4.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.22.0",
-    "react-scripts": "5.0.1",
     "react-slideshow-image": "^4.4.0"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "deploy": "react-scripts build && node ftp.js"
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.0",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/user-event": "^14.5.0",
+    "@vitejs/plugin-react": "^5.1.4",
+    "jsdom": "^26.0.0",
+    "vite": "^7.3.1",
+    "vitest": "^4.0.18"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "test": "vitest",
+    "preview": "vite preview",
+    "deploy": "vite build && node ftp.js"
   },
   "overrides": {
-    "nth-check": "^2.0.1",
-    "postcss": "^8.4.31",
-    "bfj": "^9.1.3",
     "minimatch": "^10.2.1"
   },
   "browserslist": {
