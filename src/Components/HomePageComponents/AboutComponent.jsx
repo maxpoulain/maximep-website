@@ -1,4 +1,6 @@
 import React from 'react';
+import maximeImg from '../../images/maxime.jpg';
+import cv from '../../images/CV_Maxime_Poulain.pdf';
 
 function AboutComponent() {
     return (
@@ -10,12 +12,12 @@ function AboutComponent() {
             </div>
             <div className="row">
                 <div className="about-img col-md-5">
-                    <img src={require("../../images/maxime.jpg")} alt="" style={{ "width": "110%", "height": "auto" }}></img>
+                    <img src={maximeImg} alt="" style={{ "width": "110%", "height": "auto" }}></img>
                 </div>
                 <div className="col-md-6 offset-md-1 text-left" style={{ "color": "black" }}>
                     <h3>Maxime Poulain</h3>
-                    <p className="text-justify">Je suis passioné par la <b>Data</b> (<b>IA</b>, <b>Data Science</b>,<b>Data Engineering</b>, <b>Data Analytics</b>) et à <b>l’informatique</b>. Ancien escrimeur de haut niveau, je garde une certaine proximité avec le sport.</p>
-                    <p className="text-justify">Je me qualifie également comme <b>dynamique</b>, <b>curieux</b>, <b>friand d’interactions humaines</b> et parfois un peu <b>geek</b>.</p>
+                    <p className="text-justify">Je suis passioné par la <b>Data</b> (<b>IA</b>, <b>Data Science</b>,<b>Data Engineering</b>, <b>Data Analytics</b>) et à <b>l'informatique</b>. Ancien escrimeur de haut niveau, je garde une certaine proximité avec le sport.</p>
+                    <p className="text-justify">Je me qualifie également comme <b>dynamique</b>, <b>curieux</b>, <b>friand d'interactions humaines</b> et parfois un peu <b>geek</b>.</p>
                     <p className="text-justify">J'aime particulièrement faire de la veille technologique pour apprendre et découvrir de nouvelles choses que j'essaie d'approfondir au gré de projets personels.</p>
                     <div className="social-icon">
                         <a href="https://fr.linkedin.com/in/poulainmaxime">
@@ -31,7 +33,7 @@ function AboutComponent() {
                             <span className="icon"><i className="fa fa-podcast"></i></span>
                         </a>
                         <span className="text-center">
-                            <a className="btn custom_button" href={require("../../images/CV_Maxime_Poulain.pdf")}><i className="fa fa-download" /> Télécharger mon CV</a>
+                            <a className="btn custom_button" href={cv}><i className="fa fa-download" /> Télécharger mon CV</a>
                         </span>
                     </div>
 
